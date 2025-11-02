@@ -6,7 +6,7 @@ This is a REST API for author and author works, built with **Spring Boot (Java 2
 
 ## 🚀 Features
 ✔️ **Author**: Get from DB if it doesn't exist take from https://openlibrary.org/dev/docs/api/authors and save it in DB.  
-✔️ **Works**: Get list  of author works from DB it doesn't exist take from https://openlibrary.org/authors/OL23919A/works.json and save it in DB.   
+✔️ **Works**: Get list  of author works from DB if it doesn't exist take from https://openlibrary.org/authors/OL23919A/works.json and save it in DB.   
 ✔️ **Database**: Uses MySQL with Liquibase migrations.  
 ✔️ **Containerized**: Run with Docker and Docker Compose.
 
