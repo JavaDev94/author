@@ -1,4 +1,4 @@
-package com.example.finance.model.enums;
+package com.example.author.model.enums;
 
 public enum TransactionType {
     DEPOSIT, WITHDRAW;

@@ -1,9 +1,9 @@
-package com.example.finance.service;
+package com.example.author.service;
 
-import com.example.finance.client.OpenLibraryClient;
-import com.example.finance.model.dto.AuthorResponse;
-import com.example.finance.model.entity.Author;
-import com.example.finance.repository.AuthorRepository;
+import com.example.author.client.OpenLibraryClient;
+import com.example.author.model.dto.AuthorResponse;
+import com.example.author.model.entity.Author;
+import com.example.author.repository.AuthorRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

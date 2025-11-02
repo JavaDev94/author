@@ -1,6 +1,6 @@
-package com.example.finance.repository;
+package com.example.author.repository;
 
-import com.example.finance.model.entity.Author;
+import com.example.author.model.entity.Author;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

@@ -1,31 +1,34 @@
-version: '3.8'
-
 services:
-  postgres:
-    image: postgres:15
-    container_name: finance-db
+  mysql:
+    image: mysql:8.0
+    container_name: author-db
     restart: always
     environment:
-      POSTGRES_DB: finance
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: admin
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: author_db
+      MYSQL_USER: author_user
+      MYSQL_PASSWORD: author_pass
     ports:
-      - "5432:5432"
+      - "3307:3306"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - mysql_data:/var/lib/mysql
 
-  app:
+
+  author-service:
     build: .
-    container_name: finance-app
+    container_name: author-service
     restart: always
     depends_on:
-      - postgres
+      mysql:
+        condition: service_healthy
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/finance
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: admin
+      SPRING_APPLICATION_NAME: author-service
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/author_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: author_user
+      SPRING_DATASOURCE_PASSWORD: author_pass
+      SERVER_PORT: 8080
     ports:
       - "8080:8080"
 
 volumes:
-  postgres_data:
+  mysql_data:

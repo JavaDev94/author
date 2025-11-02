@@ -1,6 +1,6 @@
-package com.example.finance.repository;
+package com.example.author.repository;
 
-import com.example.finance.model.entity.Work;
+import com.example.author.model.entity.Work;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

@@ -1,15 +1,15 @@
-package com.example.finance.controller;
+package com.example.author.controller;
 
-import com.example.finance.model.dto.AuthorResponse;
-import com.example.finance.model.dto.WorkResponse;
-import com.example.finance.service.AuthorService;
+import com.example.author.model.dto.AuthorResponse;
+import com.example.author.model.dto.WorkResponse;
+import com.example.author.service.AuthorService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/v1/api/authors")
+@RequestMapping("/api/v1/authors")
 public class AuthorController {
 
     private final AuthorService authorService;

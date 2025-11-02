@@ -1,7 +1,6 @@
 CREATE TABLE authors (
-                       id SERIAL PRIMARY KEY,
-                       name VARCHAR(100) NOT NULL,
-                       email VARCHAR(100) UNIQUE NOT NULL,
-                       balance DECIMAL(15,2) NOT NULL DEFAULT 0.00,
-                       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    external_id VARCHAR(100) UNIQUE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

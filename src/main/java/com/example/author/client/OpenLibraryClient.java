@@ -1,8 +1,8 @@
-package com.example.finance.client;
+package com.example.author.client;
 
-import com.example.finance.config.OpenLibraryProperties;
-import com.example.finance.model.entity.Author;
-import com.example.finance.model.entity.Work;
+import com.example.author.config.OpenLibraryProperties;
+import com.example.author.model.entity.Author;
+import com.example.author.model.entity.Work;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

@@ -5,7 +5,7 @@ databaseChangeLog:
       author: i.karimov
       changes:
         - sqlFile:
-            path: classpath:db.changelog/sql/ddl/000-create-user-table.sql
+            path: classpath:db.changelog/sql/ddl/000-create-authors-table.sql
             splitStatements: true
             stripComments: true
             endDelimiter: GO
@@ -15,7 +15,7 @@ databaseChangeLog:
       author: i.karimov
       changes:
         - sqlFile:
-            path: classpath:db.changelog/sql/ddl/001-create-transaction-table.sql
+            path: classpath:db.changelog/sql/ddl/001-create-works-table.sql
             splitStatements: true
             stripComments: true
             endDelimiter: GO

@@ -1,5 +1,3 @@
 databaseChangeLog:
   - include:
       file: classpath:db.changelog/changes/base-ddl.yml
-  - include:
-      file: classpath:db.changelog/changes/base-data.yml

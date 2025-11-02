@@ -1,4 +1,4 @@
-package com.example.finance.model.dto;
+package com.example.author.model.dto;
 
 public class AuthorResponse {
     private Long id;

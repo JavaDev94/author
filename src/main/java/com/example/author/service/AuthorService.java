@@ -1,17 +1,15 @@
-package com.example.finance.service;
+package com.example.author.service;
 
-import com.example.finance.client.OpenLibraryClient;
-import com.example.finance.model.dto.AuthorResponse;
-import com.example.finance.model.dto.WorkResponse;
-import com.example.finance.model.entity.Author;
-import com.example.finance.model.entity.Work;
-import com.example.finance.repository.AuthorRepository;
-import com.example.finance.repository.WorkRepository;
-import lombok.RequiredArgsConstructor;
+import com.example.author.client.OpenLibraryClient;
+import com.example.author.model.dto.AuthorResponse;
+import com.example.author.model.dto.WorkResponse;
+import com.example.author.model.entity.Author;
+import com.example.author.model.entity.Work;
+import com.example.author.repository.AuthorRepository;
+import com.example.author.repository.WorkRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 @Service
