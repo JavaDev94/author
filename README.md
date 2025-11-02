@@ -1,6 +1,6 @@
 # 📌 Author Management API
 
-This is a REST API for author and author works, built with **Spring Boot (Java 21)** and **PostgreSQL**.
+This is a REST API for author and author works, built with **Spring Boot (Java 21)** and **MySQL**.
 
 ---
 
